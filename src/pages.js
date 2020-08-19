@@ -74,19 +74,26 @@ async function saveClasses(req, res) {
   try {
     const db = await Database;
     await createProffy(db, { proffyValue, classValue, classScheduleValues });
-
     let queryString = "?subject=" + req.body.subject;
-    queryString += "&weekday=" + req.body.weekday[0];
-    queryString += "&time=" + req.body.time_from[0];
-    return res.redirect("/study" + queryString);
+    queryString += "&weekday=" + req.body.weekday;
+    queryString += "&time=" + req.body.time_from;
+    return res.redirect("/give-classes-success" + queryString);
   } catch (error) {
     console.log(error);
   }
+}
+
+function pageGiveClassesSuccess(req, res) {
+  let queryString = "?subject=" + req.query.subject;
+  queryString += "&weekday=" + req.query.weekday;
+  queryString += "&time=" + req.query.time_from;
+  res.render("give-classes-success.html", { queryString });
 }
 
 module.exports = {
   pageLanding,
   pageStudy,
   pageGiveClasses,
-  saveClasses
+  saveClasses,
+  pageGiveClassesSuccess
 }

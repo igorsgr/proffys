@@ -1,7 +1,7 @@
 // Servidor
 const express = require('express');
 const server = express();
-const {pageLanding, pageStudy, pageGiveClasses, saveClasses} = require('./pages');
+const {pageLanding, pageStudy, pageGiveClasses, saveClasses, pageGiveClassesSuccess} = require('./pages');
 
 //configurar nunjucks (tenplate engine)
 const nunjucks = require('nunjucks')
@@ -21,5 +21,6 @@ server
 .get("/study", pageStudy)
 .get("/give-classes", pageGiveClasses)
 .post("/save-classes", saveClasses)
+.get("/give-classes-success", pageGiveClassesSuccess)
 // Start do servidor
 .listen(5500)
