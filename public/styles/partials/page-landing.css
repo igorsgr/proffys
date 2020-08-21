@@ -96,6 +96,7 @@
       "button button texting";
       column-gap: 87px;
       row-gap: 86px;
+      
   }
 
   .logo-container {
@@ -125,4 +126,5 @@
     justify-self: end;
     font-size: 1.2rem;
   }
+
 }

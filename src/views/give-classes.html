@@ -20,12 +20,21 @@
         <a href="/">
           <img src="/images/icons/back.svg" alt="Voltar">
         </a>
+
+        <p>Dar aulas</p>
+
         <img src="/images/logo.svg" alt="Proffy">
       </div>
 
       <div class="header-content">
-        <strong>Que incrível que você quer dar aulas</strong>
-        <p>O primeiro passo é preencher esse formulário de inscrição</p>
+        <strong>Que incrível que você quer dar aulas.</strong>
+        <div class="legend-container">
+          <p>O primeiro passo é preencher esse formulário de inscrição.</p>
+          <div class="legend-content">
+            <img src="/images/icons/rocket.svg" alt="Foguete">
+            <p>Prepare-se! <br /> vai ser o máximo.</p>
+          </div>
+        </div>
     </div>
   </header>
 
@@ -39,14 +48,16 @@
           <input name="name" id="name" type="text" required>
         </div>
 
-        <div class="input-block">
-          <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
-          <input name="avatar" id="avatar" type="url" required>
-        </div>
-
-        <div class="input-block">
-          <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
-          <input name="whatsapp" id="whatsapp" type="number" required>
+        <div class="container-avatar-whatsapp">
+          <div class="input-block">
+            <label for="avatar">Link da sua foto <small>(comece com https://)</small></label>
+            <input name="avatar" id="avatar" type="url" required>
+          </div>
+  
+          <div class="input-block">
+            <label for="whatsapp">Whatsapp <small>(somente números)</small></label>
+            <input name="whatsapp" id="whatsapp" type="number" required>
+          </div>
         </div>
 
         <div class="textarea-block">

@@ -7,6 +7,15 @@
   margin-bottom: 6.4rem;
 }
 
+#page-give-classes .page-header .top-bar-container {
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.6rem 0;
+}
+
 #page-give-classes main {
   background: var(--color-box-base);
   width: 100%;
@@ -51,7 +60,8 @@
 }
 
 #page-give-classes .input-block+.input-block,
-#page-give-classes .input-block+.textarea-block,
+#page-give-classes .input-block+.container-avatar-whatsapp,
+#page-give-classes .container-avatar-whatsapp+.textarea-block,
 #page-give-classes .select-block+.input-block {
   margin-top: 2.4rem;
 }
@@ -136,6 +146,17 @@
   #page-give-classes main footer button {
     margin-top: 0;
     width: 200px;
+  }
+
+  .container-avatar-whatsapp {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+  }
+
+  #page-give-classes .container-avatar-whatsapp .input-block {
+    margin-top: 0;
   }
   
 }
